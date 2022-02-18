@@ -1,0 +1,8 @@
+            /*
+            *when you hit this command it will execute in background only
+            *This is linux command....
+            */
+            
+            $base_path = base_path();
+            $command = "cd $base_path && php artisan your:command > /dev/null &";
+            exec($command);
